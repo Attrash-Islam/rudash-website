@@ -1,0 +1,23 @@
+$header_height: 52px;
+
+body {
+    margin-top: $header_height + 20px;
+}
+
+.rudash-website .main-header {
+    display: flex;
+    padding: 7px 14px;
+    box-shadow: 0 0 2.25rem #9da5ab;
+    position: fixed;
+    width: 100%;
+    height: $header_height;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 9999;
+
+    > small {
+        align-self: flex-end;
+        margin-left: 8px;
+    }
+}
