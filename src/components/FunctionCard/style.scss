@@ -1,0 +1,37 @@
+.rudash-website .function-card {
+    $blue_color: #3492ff;
+    margin-bottom: 55px;
+
+    .name {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        padding: 0 60px;
+        background-color: #eee;
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .arguments-list {
+        padding-left: 15px;
+
+        li strong {
+            color: $blue_color;
+        }
+    }
+
+    .returns-content {
+        padding-left: 15px;
+
+        strong {
+            color: $blue_color;
+        }
+    }
+
+    .example-content {
+        pre {
+            padding: 28px !important;
+            font-size: 17px;
+        }
+    }
+}

@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from './components/Header';
 import './globalStyles.scss';
+import Header from './components/Header';
+import DocumentationGenerator from './components/DocumentationGenerator';
 
 function App() {
   return (
     <>
       <Header/>
-      <h2>Stay tuned!</h2>
+      <DocumentationGenerator/>
     </>
   );
 }
