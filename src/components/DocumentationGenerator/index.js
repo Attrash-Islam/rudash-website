@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { get, map } from 'lodash';
+import { get as getFp } from 'lodash/fp';
 import FunctionCard from '../FunctionCard';
 import './style.scss';
 
@@ -21,7 +22,7 @@ const DocumentationGenerator = () => {
         <Fragment key={methodKind}>
             <div className="functions-wrapper">
                 <h2>"{methodKind}" Methods</h2>
-                {functions.map(FunctionCard)}
+                {functions.sort(getFp('name')).map(FunctionCard)}
             </div>
         </Fragment>
     ));

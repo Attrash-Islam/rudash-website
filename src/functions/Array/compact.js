@@ -8,7 +8,7 @@ export default ({
     }],
     returns: {
         type: 'Array',
-        description: 'Returns the new array of filtered values'
+        description: 'Returns the new array of filtered values.'
     },
     example: `array = [1, 0, nil, 'islam']
 R_.compact(array) # => [1, 0, 'islam']`

@@ -58,6 +58,7 @@ const FunctionCard = ({ name, arguments: params, description, returns, example }
                 </div>
             </>
         )}
+        <hr/>
     </section>
 );
 
