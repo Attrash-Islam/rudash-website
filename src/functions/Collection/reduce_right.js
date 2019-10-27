@@ -19,13 +19,13 @@ export default ({
         type: '*',
         description: 'Returns the accumulated value.'
     },
-    example: `sumer = -> (acc, current) {
+    example: `sumer = ->(acc, current) {
     acc + current
 }
 
 R_.reduce_right([1, 2, 3, 4, 5], sumer) # => 15
 
 hash = { a: 1, b: 2 }
-hash_sumer = -> (acc, current) { acc + current }
+hash_sumer = ->(acc, current) { acc + current }
 R_.reduce_right(hash, hash_sumer, 0) # => 3`
 });

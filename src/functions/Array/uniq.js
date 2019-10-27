@@ -11,5 +11,5 @@ export default ({
         description: 'Returns the new duplicate free array.'
     },
     example: `array = [1,2, 2, 3, 3, 3]
-R_.uniq(array) # => [1,2,3]`
+R_.uniq(array) # => [1, 2, 3]`
 });

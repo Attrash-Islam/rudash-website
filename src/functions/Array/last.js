@@ -10,7 +10,7 @@ export default ({
         type: '*',
         description: 'Returns the last element of array.'
     },
-    example: `array = [1,2,3]
+    example: `array = [1, 2, 3]
 R_.last(array) # => 3
 
 empty_array = []

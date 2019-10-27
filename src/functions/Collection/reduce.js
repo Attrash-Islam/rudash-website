@@ -20,7 +20,7 @@ export default ({
         description: 'Returns the accumulated value.'
     },
     example: `# Array reducer
-sumer = -> (acc, current) {
+sumer = ->(acc, current) {
     acc + current
 }
 
@@ -28,11 +28,11 @@ R_.reduce([1, 2, 3, 4, 5], sumer) # => 15
 
 # Hash reducer
 hash = { a: 1, b: 2 }
-hash_sumer = -> (acc, current) { acc + current }
+hash_sumer = ->(acc, current) { acc + current }
 R_.reduce(hash, hash_sumer, 0) # => 3
 
 # String reducer
-joiner = -> (acc, current) {
+joiner = ->(acc, current) {
     acc + ',' + current
 }
 

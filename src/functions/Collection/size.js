@@ -10,7 +10,7 @@ export default ({
         type: 'Number',
         description: 'Returns the collection size.'
     },
-    example: `R_.size([1,2,3]) # => 3
+    example: `R_.size([1, 2, 3]) # => 3
 R_.size({a: 1, b: 2}) # => 2
 R_.size("pebbles") # => 7`
 });

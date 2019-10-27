@@ -10,13 +10,13 @@ export default ({
         type: 'Proc',
         description: 'Returns the new negated proc.'
     },
-    example: `is_even = -> (value) { value % 2 === 0 }
+    example: `is_even = ->(value) { value.even? }
 is_odd = R_.negate(is_even)
 
-is_even.(2) # => true
-is_even.(1) # => false
-is_odd.(1) # => true
-is_odd.(2) # => false
+is_even.call(2) # => true
+is_even.call(1) # => false
+is_odd.call(1) # => true
+is_odd.call(2) # => false
 
-R_.filter([1,2,3,4], is_odd) # => [1,3]`
+R_.filter([1, 2, 3, 4], is_odd) # => [1, 3]`
 });

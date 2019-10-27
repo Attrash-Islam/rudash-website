@@ -11,7 +11,7 @@ export default ({
         type: 'Array',
         description: 'Returns the new array of combined values.'
     },
-    example: `R_.union([2, 1], [2, 3]) # => [2,1,3]
+    example: `R_.union([2, 1], [2, 3]) # => [2, 1, 3]
 
 # Array of hashes
 arr1 = [{ a: 1 }]

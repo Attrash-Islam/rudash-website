@@ -15,9 +15,9 @@ export default ({
         type: 'Array',
         description: 'Returns the slice of array.'
     },
-    example: `array = [1,2,3]
+    example: `array = [1, 2, 3]
 R_.take(array) # => [1]
 
-array = [1,2,3]
-R_.take(array, 2) # => [1,2]`
+array = [1, 2, 3]
+R_.take(array, 2) # => [1, 2]`
 });

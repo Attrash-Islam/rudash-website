@@ -10,6 +10,6 @@ export default ({
         type: 'Array|string',
         description: 'Returns the reversed collection.'
     },
-    example: `R_.reverse([1,2,3]) # => [3,2,1]
+    example: `R_.reverse([1, 2, 3]) # => [3, 2, 1]
 R_.reverse('islam') # => 'malsi'`
 });

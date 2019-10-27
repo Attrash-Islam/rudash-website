@@ -20,8 +20,8 @@ export default ({
         type: 'Array',
         description: 'Returns the slice of array.'
     },
-    example: `R_.slice([1,2,3], 0, 2) # => [1,2]
-R_.slice([1,2,3], 1) # => [2,3]
-R_.slice([1,2,3], 1, 2) # => [2]
-R_.slice([1,2,3,4,5,6], 0, 3) # => [1,2,3]`
+    example: `R_.slice([1, 2, 3], 0, 2) # => [1, 2]
+R_.slice([1, 2, 3], 1) # => [2, 3]
+R_.slice([1, 2, 3], 1, 2) # => [2]
+R_.slice([1, 2, 3, 4, 5, 6], 0, 3) # => [1, 2, 3]`
 });

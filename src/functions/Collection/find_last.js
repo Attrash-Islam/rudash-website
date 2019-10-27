@@ -15,8 +15,8 @@ export default ({
         type: '*',
         description: 'Returns the matched element, else nil.'
     },
-    example: `is_even = -> (value) { value % 2 === 0 }
-R_.find_last([1,2,3,4], is_even) # => 4
+    example: `is_even = ->(value) { value.even? }
+R_.find_last([1, 2, 3, 4], is_even) # => 4
 
 persons = [
     { name: 'islam', sex: 'male' },

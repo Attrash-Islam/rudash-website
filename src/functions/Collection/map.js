@@ -16,24 +16,24 @@ export default ({
         description: 'Returns the new mapped array.'
     },
     example: `# Map for values
-double = -> (value) { value * 2 }
-R_.map([1,2,3], double) # => [2,4,6]
+double = ->(value) { value * 2 }
+R_.map([1, 2, 3], double) # => [2, 4, 6]
 
 # Map for values and indexes
-double_even_index = -> (value, index) {
-    index % 2 === 0 ? value * 2 : value
+double_even_index = ->(value, index) {
+    index.even? ? value * 2 : value
 }
 
-R_.map([1,2,3,4,5,6,7,8,9], double_even_index) # => [2,2,6,4,10,6,14,8,18]
+R_.map([1, 2, 3, 4, 5, 6, 7, 8, 9], double_even_index) # => [2, 2, 6, 4, 10, 6, 14, 8, 18]
 
 # Mapping Hashes
-inc_by_one = -> (value) { value + 1 }
+inc_by_one = ->(value) { value + 1 }
 hash = { a: 1 }
 R_.map(hash, inc_by_one) # => [2]
 
 # Mapping Strings
-add_e_to_even_indexes = -> (value, index) {
-    index % 2 === 0 ? value + 'e' : value
+add_e_to_even_indexes = ->(value, index) {
+    index.even? ? value + 'e' : value
 }
 
 R_.map('islam', add_e_to_even_indexes) # => ["ie", "s", "le", "a", "me"]`

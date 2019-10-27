@@ -15,6 +15,6 @@ export default ({
         type: 'Hash',
         description: 'Returns the composed aggregate object.'
     },
-    example: `iteratee = -> (value) { value.floor }
+    example: `iteratee = ->(value) { value.floor }
 R_.group_by([6.1, 4.2, 6.3], iteratee); # => { '4': [4.2], '6': [6.1, 6.3] }`
 });

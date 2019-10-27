@@ -10,9 +10,9 @@ export default ({
         type: 'Proc',
         description: 'Returns the new flipped proc.'
     },
-    example: `subtract = -> (a, b) { a - b }
-subtract.(2, 1) # => 1
+    example: `subtract = ->(a, b) { a - b }
+subtract.call(2, 1) # => 1
 
 flipped_subtract = R_.flip(subtract)
-flipped_subtract.(2, 1) # => -1`
+flipped_subtract.call(2, 1) # => -1`
 });

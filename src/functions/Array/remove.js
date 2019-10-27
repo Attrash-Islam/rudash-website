@@ -17,11 +17,11 @@ export default ({
     },
     example: `# Simple arrays
 array = [1, 2, 3, 4]
-is_even = -> (v) { v % 2 === 0 }
+is_even = ->(v) { v.even? }
 removed_items = R_.remove(array, is_even)
 
-removed_items # => [2,4]
-array # => [1,3]
+removed_items # => [2, 4]
+array # => [1, 3]
 
 # Array of hashes
 persons = [
@@ -32,6 +32,6 @@ persons = [
 
 removed_persons = R_.remove(persons, { sex: 'female' })
 
-removed_persons # => [{ name: 'sabel', sex: 'female' },{ name: 'sonia', sex: 'female' }]
+removed_persons # => [{ name: 'sabel', sex: 'female' }, { name: 'sonia', sex: 'female' }]
 persons # => [{ name: 'islam', sex: 'male' }]`
 });

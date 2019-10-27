@@ -10,8 +10,8 @@ export default ({
         type: 'Proc',
         description: 'Returns the new composite Proc.'
     },
-    example: `square = -> (number) { number * number }
-double = -> (number) { number * 2 }
+    example: `square = ->(number) { number * number }
+double = ->(number) { number * 2 }
 composed = R_.flow([square, double])
-composed.(10, 20) # => 400`
+composed.call(10, 20) # => 400`
 });

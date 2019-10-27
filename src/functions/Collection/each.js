@@ -18,14 +18,14 @@ export default ({
     example: `# Hash
 hash = {a: 1, b: 2}
 sum = 0
-eacher = -> (value) { sum += value }
+eacher = ->(value) { sum += value }
 R_.each(hash, eacher)
 sum # => 3
 
 # Array
-array = [1,2,3]
+array = [1, 2, 3]
 new_array = []
-eacher = -> (value) { new_array << value }
+eacher = ->(value) { new_array << value }
 R_.each(array, eacher)
-new_array # => [1,2,3]`
+new_array # => [1, 2, 3]`
 });

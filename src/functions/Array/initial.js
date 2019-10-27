@@ -10,8 +10,8 @@ export default ({
         type: 'Array',
         description: 'Returns the slice of array.'
     },
-    example: `array = [1,2,3]
-R_.initial(array) # => [1,2]
+    example: `array = [1, 2, 3]
+R_.initial(array) # => [1, 2]
 
 one_item_array = [1]
 R_.initial(one_item_array) # => []`

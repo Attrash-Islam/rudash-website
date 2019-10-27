@@ -14,7 +14,7 @@ export default ({
         type: 'Array',
         description: 'Returns the new concatenated array.'
     },
-    example: `arr1 = [1,2,3]
+    example: `arr1 = [1, 2, 3]
 arr2 = [4]
 R_.concat(arr1, arr2) # => [1, 2, 3, 4]
 

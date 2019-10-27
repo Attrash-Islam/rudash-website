@@ -16,8 +16,8 @@ export default ({
         description: 'Returns the new filtered array.'
     },
     example: `# Filtering array
-is_even = -> (value) { value % 2 === 0 }
-R_.reject([1,2,3,4], is_even) # => [1,3]
+is_even = ->(value) { value.even? }
+R_.reject([1, 2, 3, 4], is_even) # => [1, 3]
 
 # Filtering array of hashes
 persons = [
@@ -30,6 +30,6 @@ R_.reject(persons, { sex: 'female' })
 # => [{ name: 'islam', sex: 'male' }]
 
 # Filtering hash
-is_even = -> (v, k) { v % 2 === 0 }
-R_.reject({ a: 1, b: 2, c: 3, d: 4 }, is_even) # => [1,3]`
+is_even = ->(v, _k) { v.even? }
+R_.reject({ a: 1, b: 2, c: 3, d: 4 }, is_even) # => [1, 3]`
 });

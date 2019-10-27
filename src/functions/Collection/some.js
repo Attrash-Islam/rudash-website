@@ -15,8 +15,8 @@ export default ({
         type: 'Boolean',
         description: 'Returns true if any element passes the predicate check, else false.'
     },
-    example: `is_even = -> (value) { value % 2 === 0 }
-R_.some?([1,2,3,4], is_even) # => true
+    example: `is_even = ->(value) { value.even? }
+R_.some?([1, 2, 3, 4], is_even) # => true
 
 persons = [
     { name: 'islam', sex: 'male' },

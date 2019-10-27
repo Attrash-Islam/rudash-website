@@ -20,7 +20,7 @@ export default ({
     },
     example: `# Already exist path
 hash = { a: [{ b: { c: 3 } }] };
-manipulate_self = -> (n) { n * n }
+manipulate_self = ->(n) { n * n }
 
 R_.update(hash, 'a[0].b.c', manipulate_self)
 hash # => { a: [{ b: { c: 9 } }] }
@@ -28,7 +28,7 @@ hash # => { a: [{ b: { c: 9 } }] }
 # For not exist paths
 hash = { a: [{ b: { c: 3 } }] }
 
-add_one_if_exist_else_zero = -> (n) {
+add_one_if_exist_else_zero = ->(n) {
     n.nil? ? 0 : n + 1
 }
 

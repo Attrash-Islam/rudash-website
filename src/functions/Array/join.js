@@ -15,8 +15,8 @@ export default ({
         type: 'String',
         description: 'Returns the joined string.'
     },
-    example: `R_.join([1,2,3]) # => '1,2,3'
-R_.join([1,2,3], '*') # => '1*2*3'
-R_.join([1,2,3], 5) # => '15253'
+    example: `R_.join([1, 2, 3]) # => '1,2,3'
+R_.join([1, 2, 3], '*') # => '1*2*3'
+R_.join([1, 2, 3], 5) # => '15253'
 R_.join(0) # => ''`
 });

@@ -10,7 +10,7 @@ export default ({
         type: 'Proc',
         description: 'Returns the new curried proc.'
     },
-    example: `inc = -> (a, b) { a + b }
-incByOne = R_.curry(inc).(1)
-incByOne.(3) # => 4`
+    example: `inc = ->(a, b) { a + b }
+incByOne = R_.curry(inc).call(1)
+incByOne.call(3) # => 4`
 });

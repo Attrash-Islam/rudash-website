@@ -12,5 +12,5 @@ export default ({
         description: 'Returns the new array of intersecting values.'
     },
     example: `R_.intersection([2, 1], [2, 3]) # => [2]
-R_.intersection([1,2,3], [1,2], [2]) # => [2]`
+R_.intersection([1, 2, 3], [1, 2], [2]) # => [2]`
 });

@@ -10,7 +10,7 @@ export default ({
         type: '*',
         description: 'Returns the first element of array.'
     },
-    example: `array = [1,2,3]
+    example: `array = [1, 2, 3]
 R_.head(array) # => 1
 
 empty_array = []

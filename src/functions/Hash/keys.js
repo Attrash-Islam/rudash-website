@@ -10,6 +10,6 @@ export default ({
         type: 'Array',
         description: 'Returns the array of keys.'
     },
-    example: `hash = {a: 1, b: 2}
+    example: `hash = { a: 1, b: 2 }
 R_.keys(hash) # => ['a', 'b']`
 });
