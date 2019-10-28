@@ -7,9 +7,9 @@ export default ({
         description: 'The collection to iterate over.'
     }, {
         name: 'iteratee_fn',
-        type: 'Proc',
+        type: 'Lambda',
         default: 'R_.identity',
-        description: 'The proc function invoked per iteration.'
+        description: 'The lambda function invoked per iteration.'
     }],
     returns: {
         type: 'Array|Hash',

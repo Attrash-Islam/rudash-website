@@ -7,7 +7,7 @@ export default ({
         description: 'The collection to iterate over.'
     }, {
         name: 'iteratee_fn',
-        type: 'Proc',
+        type: 'Lambda',
         default: 'R_.identity',
         description: 'The iteratee to transform keys.'
     }],

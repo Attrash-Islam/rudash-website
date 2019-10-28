@@ -7,9 +7,9 @@ export default ({
         description: 'The array to modify.'
     }, {
         name: 'predicate_fn',
-        type: 'Proc',
+        type: 'Lambda',
         default: 'R_.identity',
-        description: 'The proc invoked per iteration.'
+        description: 'The lambda invoked per iteration.'
     }],
     returns: {
         type: 'Array',

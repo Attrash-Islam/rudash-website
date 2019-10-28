@@ -1,14 +1,14 @@
 export default ({
     name: 'flip',
-    description: 'Creates a proc that invokes the passed proc with arguments reversed.',
+    description: 'Creates a lambda that invokes the passed lambda with arguments reversed.',
     arguments: [{
         name: 'func',
-        type: 'Proc',
-        description: 'The proc to flip arguments for.'
+        type: 'Lambda',
+        description: 'The lambda to flip arguments for.'
     }],
     returns: {
-        type: 'Proc',
-        description: 'Returns the new flipped proc.'
+        type: 'Lambda',
+        description: 'Returns the new flipped lambda.'
     },
     example: `subtract = ->(a, b) { a - b }
 subtract.call(2, 1) # => 1

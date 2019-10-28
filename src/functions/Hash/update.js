@@ -1,6 +1,6 @@
 export default ({
     name: 'update',
-    description: 'This method is like R_.set except that accepts updater proc to produce the value to set.',
+    description: 'This method is like R_.set except that accepts updater lambda to produce the value to set.',
     arguments: [{
         name: 'object',
         type: 'Array|Hash',
@@ -11,8 +11,8 @@ export default ({
         description: 'The path of the property to set.'
     }, {
         name: 'updater_fn',
-        type: 'Proc',
-        description: 'The proc to produce the updated value depends on the current value.'
+        type: 'Lambda',
+        description: 'The lambda to produce the updated value depends on the current value.'
     }],
     returns: {
         type: 'Hash|Array',

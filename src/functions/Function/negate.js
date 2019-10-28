@@ -1,14 +1,14 @@
 export default ({
     name: 'negate',
-    description: 'Creates a proc that negates the result of the passed proc.',
+    description: 'Creates a lambda that negates the result of the passed lambda.',
     arguments: [{
         name: 'func',
-        type: 'Proc',
-        description: 'The proc to negate.'
+        type: 'Lambda',
+        description: 'The lambda to negate.'
     }],
     returns: {
-        type: 'Proc',
-        description: 'Returns the new negated proc.'
+        type: 'Lambda',
+        description: 'Returns the new negated lambda.'
     },
     example: `is_even = ->(value) { value.even? }
 is_odd = R_.negate(is_even)
