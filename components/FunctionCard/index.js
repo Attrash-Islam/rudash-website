@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { isNil } from 'lodash';
-import SyntaxHighlighter from "react-syntax-highlighter";
+import SyntaxHighlighter from 'react-syntax-highlighter';
 import style from 'react-syntax-highlighter/dist/esm/styles/hljs/tomorrow-night-eighties';
 import './style.scss';
 
